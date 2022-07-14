@@ -1,0 +1,47 @@
+\documentclass[sigplan,natbib=true,10pt,balance]{acmart}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+% Optional: Remove the ACM reference between the abstract and the main text.
+\settopmatter{printfolios=true,printacmref=false}
+% Optional: Comment out the CCS concepts and keywords.
+%\makeatletter\def\@parfont{\bfseries\itshape}\makeatother
+
+\usepackage[per-mode=symbol]{siunitx}
+\usepackage{xspace}
+\usepackage[abbreviations]{foreign}
+\usepackage{lipsum}
+\usepackage[]{hyperref}
+
+
+\newcommand{\sys}{\textsc{Template}\xspace}
+\newcommand{\systitle}{\textsc{Template}}
+
+\title{\systitle: A template for ACM-style paper}
+\author{Sponge Bob}
+\affiliation{\institution{University of Bikini Bottom} \city{Bikini Bottom} \country{Sea}}
+\email{sponge@bob.sq}
+
+\acmYear{20XX}\copyrightyear{20XX}
+\acmConference[CONF'XX]{The wonderful conference}{Date}{City, Country}
+
+\begin{abstract}
+  \lipsum[1-2]
+\end{abstract}
+
+  
+\begin{document}
+\maketitle
+
+\section{First}
+\lipsum[3-6]
+
+\section{Second}
+\lipsum[7-10]
+
+\nocite{*}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+\end{document}
